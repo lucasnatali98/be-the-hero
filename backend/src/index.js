@@ -1,8 +1,10 @@
 const express = require('express'); //importou o modulo express
-
+const cors = require('cors');
 const routes = require('./routes'); // arquivo e não pacote
 
 const app = express(); 
+
+app.use(cors());
 
 app.use(express.json()); //Converte os json em objetos js 
 
