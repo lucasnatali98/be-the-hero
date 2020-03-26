@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './global.css';
+import Routes from './routes';
 
+//Um componennte é uma função que retorna um html
+// JSX (JAVASCRIPT + XML) -> HTML DENTRO DO JS
+// Não se pode alterar uma variavel de estato diretamente
 function App() {
+  /**
+   * useState retorna um array com duas posições
+   * useState[0] = valor da variavel
+   * useState[1] = função de atualização
+   */
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes />
+      
+
     </div>
+   
   );
 }
 
